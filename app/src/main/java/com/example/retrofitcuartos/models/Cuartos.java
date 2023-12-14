@@ -1,13 +1,11 @@
 package com.example.retrofitcuartos.models;
 
 public class Cuartos {
-    private String id;
-    private String nombre;
-    private String propietario;
+    public String getId() {
+        return id;
+    }
 
-    public Cuartos(String id, String nombre, String propietario) {
-        this.nombre = nombre;
-        this.propietario = propietario;
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -19,14 +17,6 @@ public class Cuartos {
         this.nombre = nombre;
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public String getPropietario() {
         return propietario;
     }
@@ -34,4 +24,18 @@ public class Cuartos {
     public void setPropietario(String propietario) {
         this.propietario = propietario;
     }
+
+    public String getRuta() {
+        return ruta;
+    }
+
+    public void setRuta(String ruta) {
+        this.ruta = ruta;
+    }
+
+    private String id;
+    private String nombre;
+    private String propietario;
+    private String ruta;
+
 }
